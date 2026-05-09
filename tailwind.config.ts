@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 import { heroui } from "@heroui/react";
 
 const config: Config = {
@@ -105,7 +106,7 @@ const config: Config = {
       xs: "400px",
       xmd: "800px",
       slg: "999px",
-      ...require("tailwindcss/defaultTheme").screens,
+      ...defaultTheme.screens,
     },
   },
   darkMode: "class",
